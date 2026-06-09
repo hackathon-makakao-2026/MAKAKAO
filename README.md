@@ -68,6 +68,7 @@ Todos elaborados principalmente con cacao ecuatoriano e ingredientes naturales
 cuidadosamente seleccionados.
 
 Público objetivo:
+
 Makakao está dirigido principalmente a jóvenes y adultos interesados en skincare,
 autocuidado y productos naturales.
 También está enfocado en personas con piel sensible, consumidores ecológicos y
