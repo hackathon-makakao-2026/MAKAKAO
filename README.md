@@ -1,9 +1,9 @@
 # MAKAKAO
 [Makakao es una marca ecuatoriana de cosmética natural premium elaborada a base de cacao. Combina sostenibilidad, bienestar e innovación para crear productos saludables y eco-friendly. A través de ingredientes naturales y tecnología, busca transformar el autocuidado en una experiencia moderna, consciente y personalizada.](https://drive.google.com/file/d/1hNlA_oOxhscdbiZUppbNcqkv6jyKOGpV/view?usp=drivesdk)
 
-Nombre del proyecto
+Nombre del proyecto:
 Makakao
-Descripción general
+Descripción general:
 Makakao es una aplicación innovadora enfocada en el cuidado personalizado de la
 piel mediante inteligencia artificial y productos naturales elaborados a base de
 cacao ecuatoriano.
