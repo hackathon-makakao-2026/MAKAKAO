@@ -4,6 +4,7 @@
 Nombre del proyecto:
 
 Makakao
+
 Descripción general:
 
 Makakao es una aplicación innovadora enfocada en el cuidado personalizado de la
