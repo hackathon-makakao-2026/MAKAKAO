@@ -1,22 +1,485 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Makakao | Skincare inteligente con cacao ecuatoriano</title>
+    <meta
+      name="description"
+      content="Makakao combina inteligencia artificial, skincare personalizado y productos naturales elaborados con cacao ecuatoriano."
+    >
+    <link rel="stylesheet" href="styles.css?v=20260618-clean2">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Makakao inicio">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span>Makakao</span>
+      </a>
+      <nav class="main-nav" aria-label="Secciones principales">
+        <a href="#diagnostico">Diagnóstico</a>
+        <a href="#laboratorio">Laboratorio</a>
+        <a href="#tienda">Tienda</a>
+        <a href="#chat">Chat IA</a>
+        <a href="#historial">Historial</a>
+        <a href="#impacto">Impacto</a>
+      </nav>
+      <a class="cart-chip" href="#carrito" aria-label="Ver carrito">
+        <span>Carrito</span>
+        <strong id="cart-count">0</strong>
+      </a>
+    </header>
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Makakao Skincare App Design</title>
-      <meta name="description" content="Empower your skincare routine with AI-driven analysis and personalized product recommendations using natural Ecuadorian cocoa for healthier skin." />
-      <meta name="robots" content="noindex, nofollow" />
-      <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
-      
-    </head>
+    <main>
+      <section id="inicio" class="hero">
+        <img class="hero-media" src="assets/products/hero-products.webp" alt="Productos reales Makakao sostenidos en mano." fetchpriority="high">
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-orbit" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Cosmética natural premium hecha en Ecuador</p>
+          <h1>Makakao</h1>
+          <p>
+            Skincare personalizado con inteligencia artificial y productos naturales a base
+            de cacao ecuatoriano.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#diagnostico">Probar diagnóstico</a>
+            <a class="button secondary" href="#tienda">Ver productos</a>
+          </div>
+          <div class="hero-metrics" aria-label="Indicadores del prototipo">
+            <span><strong>6</strong> métricas de piel</span>
+            <span><strong>IA</strong> contextual</span>
+            <span><strong>DB</strong> local activa</span>
+          </div>
+        </div>
+        <aside class="hero-app-card" aria-label="Vista previa de la app Makakao">
+          <div class="app-card-top">
+            <span></span>
+            <strong>Skin Scan</strong>
+            <em>Live</em>
+          </div>
+          <div class="app-face-map">
+            <i></i>
+          </div>
+          <div class="app-card-bars">
+            <label>Poros <span>42%</span></label>
+            <b style="--bar: 42%"></b>
+            <label>Textura <span>58%</span></label>
+            <b style="--bar: 58%"></b>
+            <label>Brillo <span>31%</span></label>
+            <b style="--bar: 31%"></b>
+          </div>
+        </aside>
+      </section>
 
-    <body>
-      
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-      
-    </body>
-  </html>
-  
+      <section id="app" class="section app-experience-section">
+        <div class="section-heading">
+          <p class="eyebrow">Experiencia móvil</p>
+          <h2>Una app que se siente viva</h2>
+          <p>
+            Navega entre inicio, scanner, laboratorio, tienda y perfil para ver como funcionaria Makakao como producto digital completo.
+          </p>
+        </div>
+        <div class="phone-stage">
+          <div class="phone-frame">
+            <div class="phone-notch" aria-hidden="true"></div>
+            <div class="phone-status">
+              <span>9:41</span>
+              <span>●●●</span>
+            </div>
+            <div class="phone-screen" id="phone-screen">
+              <article class="phone-view active" data-view="home">
+                <div class="phone-hero">
+                  <span class="phone-logo">M</span>
+                  <p>Hola, Valentina</p>
+                  <h3>Tu piel merece lo mejor del cacao</h3>
+                  <div class="mini-score">
+                    <strong>82</strong>
+                    <span>Último análisis · piel balanceada</span>
+                  </div>
+                </div>
+                <div class="quick-grid">
+                  <button type="button" data-phone-target="scan">Escanear piel</button>
+                  <button type="button" data-phone-target="chat">Chat IA</button>
+                  <button type="button" data-phone-target="lab">Lab digital</button>
+                  <button type="button" data-phone-target="store">Tienda</button>
+                </div>
+                <div class="tip-card">
+                  <strong>Consejo IA</strong>
+                  <span>El cacao combina bien con bases calmantes cuando la piel se siente reactiva.</span>
+                </div>
+              </article>
+
+              <article class="phone-view" data-view="scan">
+                <div class="scan-phone-card">
+                  <div class="scan-reticle">
+                    <span></span>
+                  </div>
+                  <p>Escaneo facial</p>
+                  <strong>Detectando textura, poros y brillo</strong>
+                </div>
+                <div class="phone-bars">
+                  <label>Poros <span>44%</span></label><b style="--bar: 44%"></b>
+                  <label>Textura <span>57%</span></label><b style="--bar: 57%"></b>
+                  <label>Brillo <span>32%</span></label><b style="--bar: 32%"></b>
+                </div>
+              </article>
+
+              <article class="phone-view" data-view="chat">
+                <div class="phone-chat">
+                  <p class="message bot">Puedo ayudarte con productos, poros, textura o reacciones.</p>
+                  <p class="message user">Tengo brillo en zona T</p>
+                  <p class="message bot">Usa limpieza balanceada y una formula ligera. Evita resecar demasiado.</p>
+                </div>
+                <div class="phone-input">Escribe tu duda...</div>
+              </article>
+
+              <article class="phone-view" data-view="lab">
+                <div class="formula-orb">Cacao + Aloe</div>
+                <div class="phone-bars">
+                  <label>Intensidad <span>70%</span></label><b style="--bar: 70%"></b>
+                  <label>Aroma <span>55%</span></label><b style="--bar: 55%"></b>
+                  <label>Suavidad <span>86%</span></label><b style="--bar: 86%"></b>
+                </div>
+                <button class="phone-primary" type="button">Guardar fórmula</button>
+              </article>
+
+              <article class="phone-view" data-view="store">
+                <div class="mini-products">
+                  <div><span class="mini-product soap"></span><strong>Jabón cacao</strong><em>$6</em></div>
+                  <div><span class="mini-product scrub"></span><strong>Exfoliante</strong><em>$12.50</em></div>
+                  <div><span class="mini-product balm"></span><strong>Bálsamo</strong><em>$4.50</em></div>
+                </div>
+                <button class="phone-primary" type="button">Proceder al pago</button>
+              </article>
+
+              <article class="phone-view" data-view="profile">
+                <div class="profile-card">
+                  <span class="avatar-dot">V</span>
+                  <strong>Valentina Torres</strong>
+                  <p>Miembro Premium · 3 análisis</p>
+                </div>
+                <div class="history-list compact">
+                  <div class="history-item"><strong>08 Jun</strong><span>Piel normal · Score 82</span></div>
+                  <div class="history-item"><strong>25 May</strong><span>Piel sensible · Score 74</span></div>
+                </div>
+              </article>
+            </div>
+            <nav class="phone-nav" aria-label="Navegación demo app">
+              <button class="active" type="button" data-phone-target="home">Inicio</button>
+              <button type="button" data-phone-target="scan">Scan</button>
+              <button type="button" data-phone-target="lab">Lab</button>
+              <button type="button" data-phone-target="store">Tienda</button>
+              <button type="button" data-phone-target="profile">Perfil</button>
+            </nav>
+          </div>
+          <div class="experience-copy">
+            <span class="status-pill">Inspirado en tu ZIP React</span>
+            <h3>Porté la experiencia móvil sin romper GitHub Pages</h3>
+            <p>
+              El código recibido usa React, Motion, Tailwind y componentes UI. Integré su dirección visual como una experiencia nativa dentro de la web estática actual.
+            </p>
+            <div class="experience-points">
+              <span>Bottom nav interactivo</span>
+              <span>Pantallas tipo app</span>
+              <span>Scanner animado</span>
+              <span>Tienda móvil</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="diagnostico" class="section diagnostic-section">
+        <div class="section-heading">
+          <p class="eyebrow">Escáner facial con IA</p>
+          <h2>Rutina sugerida según tu piel</h2>
+        </div>
+        <div class="diagnostic-shell">
+          <form class="scan-panel" id="skin-form">
+            <div class="scan-preview">
+              <div class="camera-frame">
+                <video id="skin-video" autoplay playsinline muted></video>
+                <img id="skin-photo-preview" alt="Foto capturada para analisis de piel.">
+                <div class="camera-placeholder" id="camera-placeholder">
+                  <div class="scan-face" aria-hidden="true">
+                    <span></span>
+                  </div>
+                  <strong>Scanner facial</strong>
+                </div>
+              </div>
+              <div class="scan-progress">
+                <span id="scan-bar"></span>
+              </div>
+              <small id="scan-status">Listo para analizar</small>
+              <div class="scan-actions">
+                <button class="button secondary dark" id="start-camera" type="button">Activar camara</button>
+                <button class="button secondary dark" id="capture-photo" type="button" disabled>Capturar</button>
+                <label class="button secondary dark upload-button" for="skin-upload">Subir foto</label>
+                <input id="skin-upload" type="file" accept="image/*">
+              </div>
+              <canvas id="skin-canvas" width="320" height="320" aria-hidden="true"></canvas>
+            </div>
+            <label for="skin-type">
+              Tipo de piel
+              <select id="skin-type" name="skin-type">
+                <option value="seca">Seca</option>
+                <option value="grasa">Grasa</option>
+                <option value="mixta">Mixta</option>
+                <option value="sensible">Sensible</option>
+              </select>
+            </label>
+            <label for="skin-goal">
+              Objetivo principal
+              <select id="skin-goal" name="skin-goal">
+                <option value="hidratacion">Hidratación</option>
+                <option value="luminosidad">Luminosidad</option>
+                <option value="calma">Calmar irritación</option>
+                <option value="equilibrio">Control de brillo</option>
+              </select>
+            </label>
+            <label for="scent">
+              Preferencia de aroma
+              <select id="scent" name="scent">
+                <option value="cacao">Cacao suave</option>
+                <option value="vainilla">Vainilla</option>
+                <option value="citricos">Cítricos</option>
+                <option value="lavanda">Lavanda</option>
+              </select>
+            </label>
+            <button class="button primary full" type="submit">Analizar piel</button>
+            <small class="medical-note">
+              Análisis visual orientativo. No sustituye una evaluación dermatológica.
+            </small>
+          </form>
+
+          <article class="result-panel" aria-live="polite">
+            <span class="status-pill">IA personalizada</span>
+            <h3 id="result-title">Rutina cacao hidratante</h3>
+            <p id="result-copy">
+              Limpieza suave, exfoliación ligera con cacao y bálsamo nutritivo para reforzar la barrera natural.
+            </p>
+            <div class="routine-grid" id="routine-grid">
+              <span>Limpieza</span>
+              <span>Exfoliante</span>
+              <span>Bálsamo</span>
+            </div>
+            <div class="score-board" aria-label="Puntajes de diagnóstico">
+              <div>
+                <span>Hidratación</span>
+                <meter id="score-hydration" min="0" max="100" value="72"></meter>
+                <output class="score-value" for="score-hydration">72%</output>
+              </div>
+              <div>
+                <span>Sensibilidad</span>
+                <meter id="score-sensitivity" min="0" max="100" value="34"></meter>
+                <output class="score-value" for="score-sensitivity">34%</output>
+              </div>
+              <div>
+                <span>Balance</span>
+                <meter id="score-balance" min="0" max="100" value="64"></meter>
+                <output class="score-value" for="score-balance">64%</output>
+              </div>
+              <div>
+                <span>Poros visibles</span>
+                <meter id="score-pores" min="0" max="100" value="40"></meter>
+                <output class="score-value" for="score-pores">40%</output>
+              </div>
+              <div>
+                <span>Textura</span>
+                <meter id="score-texture" min="0" max="100" value="45"></meter>
+                <output class="score-value" for="score-texture">45%</output>
+              </div>
+              <div>
+                <span>Brillo</span>
+                <meter id="score-shine" min="0" max="100" value="36"></meter>
+                <output class="score-value" for="score-shine">36%</output>
+              </div>
+            </div>
+            <div class="analysis-grid" id="analysis-grid">
+              <span>Captura una foto para estimar poros, textura, brillo y uniformidad.</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="laboratorio" class="section lab-section">
+        <div class="lab-copy">
+          <p class="eyebrow">Laboratorio digital</p>
+          <h2>Personaliza fórmula, aroma y beneficio</h2>
+          <p>
+            La propuesta de Makakao permite crear productos personalizados con ingredientes
+            naturales, beneficios específicos y una experiencia de compra integrada.
+          </p>
+        </div>
+        <div class="formula-builder">
+          <button class="chip active" type="button" data-formula="cacao">Cacao</button>
+          <button class="chip" type="button" data-formula="avena">Avena</button>
+          <button class="chip" type="button" data-formula="miel">Miel</button>
+          <button class="chip" type="button" data-formula="aloe">Aloe</button>
+          <div class="formula-card">
+            <span id="formula-kicker">Base antioxidante</span>
+            <strong id="formula-name">Cacao ecuatoriano</strong>
+            <p id="formula-copy">Textura cremosa, aroma cálido y apoyo nutritivo para rutinas de autocuidado consciente.</p>
+            <div class="mix-controls" aria-label="Personalización de fórmula">
+              <label for="mix-intensity">
+                Intensidad
+                <input id="mix-intensity" type="range" min="1" max="5" value="3">
+              </label>
+              <label for="mix-aroma">
+                Aroma
+                <input id="mix-aroma" type="range" min="1" max="5" value="4">
+              </label>
+              <label for="mix-softness">
+                Suavidad
+                <input id="mix-softness" type="range" min="1" max="5" value="3">
+              </label>
+            </div>
+            <div class="formula-output">
+              <span id="formula-score">Personalización 67%</span>
+              <button class="button primary" id="save-formula" type="button">Guardar fórmula</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tienda" class="section shop-section">
+        <div class="section-heading">
+          <p class="eyebrow">Tienda digital</p>
+          <h2>Productos naturales destacados</h2>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <img class="product-photo" src="assets/products/exfoliante.webp" alt="Exfoliante corporal Makakao de cacao y miel." loading="lazy" decoding="async">
+            <h3>Exfoliante corporal</h3>
+            <p>Cacao molido e ingredientes suaves para renovar la piel sin agresión.</p>
+            <button class="button product-button" type="button" data-product="Exfoliante corporal" data-price="12.50">Agregar $12.50</button>
+          </article>
+          <article class="product-card">
+            <img class="product-photo" src="assets/products/jabon.webp" alt="Jabón artesanal Makakao de cacao y miel." loading="lazy" decoding="async">
+            <h3>Jabón artesanal</h3>
+            <p>Limpieza diaria con aceites naturales, cacao y empaques sostenibles.</p>
+            <button class="button product-button" type="button" data-product="Jabón artesanal" data-price="6.00">Agregar $6.00</button>
+          </article>
+          <article class="product-card">
+            <img class="product-photo" src="assets/products/balsamo.webp" alt="Bálsamo labial Makakao de cacao." loading="lazy" decoding="async">
+            <h3>Bálsamo labial</h3>
+            <p>Nutrición práctica para labios sensibles con aroma personalizado.</p>
+            <button class="button product-button" type="button" data-product="Bálsamo labial" data-price="4.50">Agregar $4.50</button>
+          </article>
+          <article class="product-card">
+            <img class="product-photo" src="assets/products/vela.webp" alt="Vela aromática Makakao con cacao." loading="lazy" decoding="async">
+            <h3>Vela aromática</h3>
+            <p>Bienestar sensorial inspirado en cacao, vainilla y notas botánicas.</p>
+            <button class="button product-button" type="button" data-product="Vela aromática" data-price="9.75">Agregar $9.75</button>
+          </article>
+        </div>
+      </section>
+
+      <section id="chat" class="section chat-section">
+        <div class="section-heading">
+          <p class="eyebrow">Chat inteligente</p>
+          <h2>Asistente de skincare</h2>
+        </div>
+        <div class="chat-shell">
+          <div class="chat-window" id="chat-window" aria-live="polite">
+            <p class="message bot">Hola, soy el asistente Makakao. Pregúntame por hidratación, piel sensible, brillo o rutinas con cacao.</p>
+          </div>
+          <form class="chat-form" id="chat-form">
+            <input id="chat-input" type="text" placeholder="Escribe tu consulta de skincare..." autocomplete="off">
+            <button class="button primary" type="submit">Enviar</button>
+          </form>
+          <div class="quick-prompts" aria-label="Preguntas rápidas">
+            <button type="button" data-prompt="Tengo piel sensible">Piel sensible</button>
+            <button type="button" data-prompt="Quiero más hidratación">Hidratación</button>
+            <button type="button" data-prompt="Cómo controlo el brillo">Control de brillo</button>
+            <button type="button" data-prompt="Me dio reaccion un producto">Reacciones</button>
+            <button type="button" data-prompt="Que producto uso para poros visibles">Poros</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="carrito" class="section cart-section">
+        <div class="section-heading">
+          <p class="eyebrow">Compra demo</p>
+          <h2>Carrito interactivo</h2>
+        </div>
+        <div class="cart-panel">
+          <div id="cart-items" class="cart-items">
+            <p>Agrega productos desde la tienda para armar tu pedido.</p>
+          </div>
+          <div class="cart-summary">
+            <span>Total estimado</span>
+            <strong id="cart-total">$0.00</strong>
+            <button class="button primary" id="checkout-button" data-checkout type="button">Pagar pedido</button>
+            <small id="payment-status">Pago externo pendiente de configuración.</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="historial" class="section history-section">
+        <div class="section-heading">
+          <p class="eyebrow">Base de datos local</p>
+          <h2>Historial y actividad</h2>
+          <p>
+            Los escaneos, mensajes, formulas y carrito se guardan localmente en el
+            navegador. La capa de datos esta lista para conectarse a Firebase o Supabase.
+          </p>
+        </div>
+        <div class="history-shell">
+          <div class="db-status">
+            <span id="db-status">Inicializando almacenamiento...</span>
+            <button class="button secondary dark" id="clear-data" type="button">Limpiar datos</button>
+          </div>
+          <div class="history-grid">
+            <article>
+              <h3>Escaneos recientes</h3>
+              <div id="scan-history" class="history-list">
+                <p>No hay escaneos guardados todavia.</p>
+              </div>
+            </article>
+            <article>
+              <h3>Interacciones</h3>
+              <div id="activity-history" class="history-list">
+                <p>No hay actividad guardada todavia.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="impacto" class="section impact-section">
+        <div class="impact-copy">
+          <p class="eyebrow">ODS 3, 8 y 12</p>
+          <h2>Bienestar, emprendimiento y consumo responsable</h2>
+          <p>
+            Makakao promueve autocuidado saludable, producción sostenible y crecimiento
+            económico mediante innovación tecnológica y cacao ecuatoriano.
+          </p>
+        </div>
+        <div class="metric-grid">
+          <div><strong>IA</strong><span>Análisis de piel</span></div>
+          <div><strong>Eco</strong><span>Ingredientes naturales</span></div>
+          <div><strong>Local</strong><span>Cacao ecuatoriano</span></div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <span>Makakao 2026</span>
+      <span>Skincare, IA y cacao ecuatoriano</span>
+    </footer>
+
+    <nav class="route-tabs" aria-label="Pantallas de Makakao">
+      <a href="#inicio">Inicio</a>
+      <a href="#diagnostico">Scanner</a>
+      <a href="#tienda">Tienda</a>
+      <a href="#chat">Chat</a>
+      <a href="#historial">Historial</a>
+    </nav>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script type="module" src="script.js?v=20260618-clean2"></script>
+  </body>
+</html>
